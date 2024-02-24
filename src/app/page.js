@@ -8,6 +8,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { Fade } from "react-awesome-reveal";
 import VisibilitySensor from "react-visibility-sensor";
 import Projects from "@/components/Projects/page";
+import Certifications from "@/components/Certifications/page";
 export default function Home() {
   return (
     <main
@@ -52,6 +53,8 @@ export default function Home() {
       <div className="mt-40 m-auto pt-40">
         <Projects />
       </div>
+
+      <Certifications/>
     </main>
   );
 }
