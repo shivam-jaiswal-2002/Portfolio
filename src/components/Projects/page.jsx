@@ -7,7 +7,7 @@ import gpt from "../../../public/gpt.jpg";
 import Image from "next/image";
 const Projects = () => {
   return (
-    <div id="projects" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-2 py-12">
+    <div id="projects" className="max-w-5xl font-serif mx-auto px-4 sm:px-6 lg:px-2 py-12">
       <div className="grid grid-cols-2 gap-8">
         {/* Project 1 */}
         <div className="flex items-center">

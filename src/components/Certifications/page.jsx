@@ -18,8 +18,8 @@ export default function Certifications() {
 
   return (
     <div id="certifications" className="max-w-20xl mx-auto px-4 sm:px-6 lg:px-2 py-12">
-      <h2 className="text-3xl font-bold mb-4">Certifications</h2>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+      <h2 className="text-5xl font-bold mb-4 text-center">Certificates</h2><hr/>
+      <div className="grid mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
         {certifications.map((certification, index) => (
           <CertificateBox key={index} name={certification.name} image={certification.image} />
         ))}
