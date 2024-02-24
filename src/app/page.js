@@ -13,7 +13,7 @@ import Contact from "@/components/Contact/page";
 export default function Home() {
   return (
     <main
-      id="myself"
+      id=""
       className="font-serif bg flex min-h-screen flex-col mb-0 m-7 justify-between p-24"
     >
       {/* Myself Page */}

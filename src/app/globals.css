@@ -5,13 +5,7 @@
 @import url('https://fonts.google.com/specimen/Anta');
 
 
-#myself {
-  background: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzB1ZjFscXBxZ3N6NDd3N3NybGFsdGFjbmpnZjNscnR0ejg3bG1xNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/sWFYgYFjHGugleQdO7/giphy.gif') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
