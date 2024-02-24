@@ -2,7 +2,9 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Picture from "../../../public/dp_final.jpeg";
-
+import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 const MeL = () => {
   const [displayText, setDisplayText] = useState("Hello, I am a ");
   const [isDeveloper, setIsDeveloper] = useState(false);
@@ -32,15 +34,21 @@ const MeL = () => {
   }, [isDeveloper]);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-2 py-12 justify-between">
+    <div className="flex flex-col max-w-5xl mx-auto px-4 sm:px-6 lg:px-2 py-12 justify-between">
         {/* Left Div */}
         <div className="flex justify-center items-center w-1/2">
           {/* Displaying the image */}
           <div className="relative rounded-full overflow-hidden"> {/* Set a fixed size for the container */}
             <Image src={Picture} alt="My Profile Picture" width={500} height={500} className="rounded-lg" />
+      
           </div>
         </div>
-
+      <div className='p-10 mx-12 flex'>
+      <a href="https://github.com/shivam-jaiswal-2002" className='mr-3'><FaGithub color='white' size={30}/></a>
+        <a href="https://www.instagram.com/jais_shivam_/" className='mr-3'><FaInstagram color='white' size={30}/></a>
+        <a href="https://linkedin.com/in/shivam-jaiswal-779554232" className=''><FaLinkedin color='white' size={30}/></a>
+      </div>
+        
     </div>
   );
 };
