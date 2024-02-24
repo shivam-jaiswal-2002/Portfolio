@@ -9,11 +9,12 @@ import { Fade } from "react-awesome-reveal";
 import VisibilitySensor from "react-visibility-sensor";
 import Projects from "@/components/Projects/page";
 import Certifications from "@/components/Certifications/page";
+import Contact from "@/components/Contact/page";
 export default function Home() {
   return (
     <main
       id="myself"
-      className="font-serif bg flex min-h-screen flex-col m-7 justify-between p-24"
+      className="font-serif bg flex min-h-screen flex-col mb-0 m-7 justify-between p-24"
     >
       {/* Myself Page */}
       <div className="flex">
@@ -53,8 +54,14 @@ export default function Home() {
       <div className="mt-40 m-auto pt-40">
         <Projects />
       </div>
-
+      
+      <div>
       <Certifications/>
+
+      </div>
+    
+
+
     </main>
   );
 }
