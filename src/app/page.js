@@ -55,7 +55,7 @@ export default function Home() {
         <div className="text-5xl text-center mb-2">
           Projects
         </div>
-        <hr/>
+        <hr />
         <Projects />
       </div>
       
