@@ -9,10 +9,6 @@ import { SiCss3, SiExpress, SiSpringboot } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import useMediaQuery from '@mui/material/useMediaQuery'
 
-
-for (let i = 0; i < starsCount; i++) {
-  stars.push(<IoStarSharp key={i} />);
-}
 const Skills = () => {
   const skills = [
     { icon: <FaJava size={50} /> ,  name:"Java"},
