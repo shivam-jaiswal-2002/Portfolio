@@ -5,7 +5,7 @@ import { IoIosMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 const Contact = () => {
   return (
-    <div className="lg:flex lg:h-10 sm:flex mb-0 lg:justify-between lg:px-3 bg-gray-300 lg:items-center lg:mt-40">
+    <div id="contact" className="lg:flex mb-0 lg:h-10 sm:flex lg:justify-between lg:px-3 bg-gray-300 lg:items-center lg:mt-40">
       <div className="rounded-lg p-4 flex lg:items-center lg:justify-center">
         <div className="mr-4">
           <FaPhoneAlt color="black"/>

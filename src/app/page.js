@@ -66,6 +66,8 @@ export default function Home() {
       <div>
         <Certifications />
       </div>
+
+
     </main>
   );
 }

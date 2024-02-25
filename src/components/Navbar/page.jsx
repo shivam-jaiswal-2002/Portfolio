@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-white font-bold text-xl">My Portfolio</Link>
+              <Link href="/" className="text-white font-serif font-bold text-3xl ml-20">Portfolio</Link>
             </div>
           </div>
           <div className="hidden md:block">
