@@ -40,7 +40,6 @@ const MeL = () => {
           {/* Displaying the image */}
           <div className="relative rounded-full overflow-hidden"> {/* Set a fixed size for the container */}
             <Image src={Picture} alt="My Profile Picture" width={500} height={500} className="rounded-lg" />
-      
           </div>
         </div>
       <div className='p-10 mx-12 flex'>

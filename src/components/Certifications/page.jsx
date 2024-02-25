@@ -4,15 +4,15 @@ import Java from "../../../public/JAVA_HACKERRANK.png";
 import PS from "../../../public/PS.png";
 import JAVAC from "../../../public/JAVA.png";
 import CPP from "../../../public/CPP.png";
-import SQL from "../../../public/MYSQL.png";
+import SQL from "../../../public/SQL.png";
 
 export default function Certifications() {
   const certifications = [
     { name: "Microsoft SC-900 ", image: MS },
-    { name: "Java Tutorial IIT Bombay", image: Java},
+    { name: "Java Tutorial IIT Bombay", image: JAVAC},
     { name: "CPP Tutorial IIT Bombay", image: CPP },
     { name: "Php and Mysql Tutorial IIT Bombay", image: SQL},
-    { name: "Java HackerRank", image: JAVAC },
+    { name: "Java HackerRank", image: Java },
     { name: "Problem Solving HackerRank", image: PS},
   ];
 

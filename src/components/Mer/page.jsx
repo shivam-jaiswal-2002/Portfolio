@@ -10,7 +10,7 @@ const MeR = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsDeveloper((prevIsDeveloper) => !prevIsDeveloper);
-    }, 3000); // Change the duration as needed (milliseconds)
+    }, 1000); // Change the duration as needed (milliseconds)
 
     return () => clearInterval(interval);
   }, []);

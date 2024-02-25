@@ -21,7 +21,7 @@ export default function Home() {
         <div className="w-1/2">
           <MeL />
         </div>
-        <div className="w-1/2 my-auto">
+        <div className="w-1/2 m-auto">
           <MeR />
         </div>
       </div>
