@@ -17,7 +17,10 @@ export default function Home() {
       className="font-serif bg flex min-h-screen flex-col mb-0 m-7 justify-between p-24"
     >
       {/* Myself Page */}
-      <div className="flex">
+      <VisibilitySensor partialVisibility>
+            {({ isVisible }) =>
+              <Fade bottom when={isVisible}>
+                <div className="flex">
         <div className="w-1/2">
           <MeL />
         </div>
@@ -25,6 +28,10 @@ export default function Home() {
           <MeR />
         </div>
       </div>
+              </Fade>
+            }
+          </VisibilitySensor>
+     
 
       {/* Skills and SkillName Pages */}
       <div id="skills" className="flex mt-40 pt-40">
