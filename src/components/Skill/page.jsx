@@ -8,8 +8,7 @@ import { FaPython } from "react-icons/fa";
 import { SiCss3, SiExpress, SiSpringboot } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import useMediaQuery from '@mui/material/useMediaQuery'
-const starsCount = 5;
-const stars = [];
+
 
 for (let i = 0; i < starsCount; i++) {
   stars.push(<IoStarSharp key={i} />);

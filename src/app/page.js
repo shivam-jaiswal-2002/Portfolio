@@ -17,20 +17,23 @@ export default function Home() {
       className="font-serif bg flex min-h-screen flex-col mb-0 m-7 lg:justify-between sm:justify-center lg:p-24 "
     >
       {/* Myself Page */}
-      <VisibilitySensor partialVisibility>
+    <div>
+    <VisibilitySensor partialVisibility>
         {({ isVisible }) => (
           <Fade bottom when={isVisible}>
             <div className="lg:flex">
               <div className="lg:w-1/2">
                 <MeL />
               </div>
-              <div className="lg:w-1/2 lg:my-auto sm:justify-between sm:item-center">
+              <div className="lg:w-1/2 lg:my-auto sm:justify-center sm:item-center">
                 <MeR />
               </div>
             </div>
           </Fade>
         )}
       </VisibilitySensor>
+    </div>
+
 
       {/* Skills and SkillName Pages */}
       <div id="skills" className="lg:flex lg:mt-40 lg:pt-40 sm:ml-10 sm:p-20">

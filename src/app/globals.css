@@ -4,7 +4,12 @@
 
 @import url('https://fonts.google.com/specimen/Anta');
 
-
+#myself {
+  background-image: url('../../public/backgroundImage.jpg');
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  min-height: 100vh; /* Set minimum height to cover the entire viewport height */
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
