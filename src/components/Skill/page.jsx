@@ -7,6 +7,7 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 import { SiCss3, SiExpress, SiSpringboot } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import useMediaQuery from '@mui/material/useMediaQuery'
 const starsCount = 5;
 const stars = [];
 
@@ -37,27 +38,33 @@ const Skills = () => {
   }, []);
 
   return (
-    <div id="skills" className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-2 py-12 justify-between">
+    <div id="skills" className="pt-10 sm:ml-0 lg:max-w-5xl lg:mx-auto lg:px-4 sm:px-10 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
       {/* Left Div */}
-      <div className="flex justify-center items-center w-1/2">
-        <div className="relative circle">
+      <div className="lg:flex lg:justify-center lg:items-center lg:w-1/2">
+        <div className="lg:relative circle">
           {skills.map((skill, index) => (
             <Skill key={index} icon={skill.icon} name={skill.name} angle={angle + index * (360 / skills.length)} />
           ))}
         </div>
       </div>
-    
     </div>
   );
 };
 
 
-
 const Skill = ({ icon, name, angle }) => {
-  const radius = 220; // Adjust the radius of the circle as needed
+  const defaultRadius = 220; // Default radius for larger devices
+  const smallScreenRadius = 150; // Adjust the radius for smaller devices as needed
 
-  const positionX = radius * Math.cos((angle * Math.PI) / 180);
-  const positionY = radius * Math.sin((angle * Math.PI) / 180);
+  // Media query to check for smaller devices
+  const isSmallScreen = useMediaQuery('(max-width: 768px)'); // Adjust the breakpoint as needed
+
+  // Use the appropriate radius based on the screen size
+  const adjustedRadius = isSmallScreen ? smallScreenRadius : defaultRadius;
+
+  // Calculate position based on the adjusted radius
+  const positionX = adjustedRadius * Math.cos((angle * Math.PI) / 180);
+  const positionY = adjustedRadius * Math.sin((angle * Math.PI) / 180);
 
   return (
     <div
@@ -73,6 +80,8 @@ const Skill = ({ icon, name, angle }) => {
     </div>
   );
 };
+
+
 
 
 export default Skills;

@@ -10,7 +10,7 @@ const MeR = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsDeveloper((prevIsDeveloper) => !prevIsDeveloper);
-    }, 3000); // Change the duration as needed (milliseconds)
+    }, 2000); // Change the duration as needed (milliseconds)
 
     return () => clearInterval(interval);
   }, []);
@@ -19,7 +19,7 @@ const MeR = () => {
     const text = isDeveloper ? "Next.js Developer" : "Student";
     const fullText = "Hello, I am a " + text;
     let currentIndex = 14;
-
+ 
     const typingAnimation = setInterval(() => {
       setDisplayText(fullText.substring(0, currentIndex));
       currentIndex++;
@@ -35,7 +35,7 @@ const MeR = () => {
     <div className="">
 
         {/* Right Div */}
-        <div className="flex justify-center items-center">
+        <div className="lg:flex lg:justify-center lg:items-center sm:justify-evenly">
           {/* About Me content */}
           <div>
             <h2 className="text-3xl mt-10 font-bold">{displayText}</h2>
