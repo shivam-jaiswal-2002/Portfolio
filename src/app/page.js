@@ -65,7 +65,7 @@ export default function Home() {
         <hr />
         <Projects />
       </div>
-
+      
       <div>
         <Certifications />
       </div>
