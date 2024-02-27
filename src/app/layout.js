@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 
       <head>
       </head>
-      <body className={inter.className}>
+      <body id="myself" className={inter.className}>
         <Navbar />
         {children}
       <Contact />

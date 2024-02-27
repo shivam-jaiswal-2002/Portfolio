@@ -4,12 +4,12 @@
 
 @import url('https://fonts.google.com/specimen/Anta');
 
-#myself {
-  background-image: url('../../public/backgroundImage.jpg');
-  background-size: cover; /* Cover the entire container */
-  background-repeat: no-repeat; /* Do not repeat the background image */
-  min-height: 100vh; /* Set minimum height to cover the entire viewport height */
-}
+/* #myself {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+} */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -44,6 +44,7 @@ body {
   font-style:italic ;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .anta-regular {
   font-family: "Anta", sans-serif;
   font-weight: 400;
@@ -80,4 +81,39 @@ body {
 .skill .stars {
   display: flex;
   justify-content: center;
+}
+
+@keyframes animate-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animate-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.project {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.animate-from-left {
+  animation-name: animate-from-left;
+}
+
+.animate-from-right {
+  animation-name: animate-from-right;
 }
