@@ -48,7 +48,7 @@ const MeL = () => {
           <a href="https://github.com/shivam-jaiswal-2002" className="mr-3"><FaGithub color="white" size={30} /></a>
           <a href="https://www.instagram.com/jais_shivam_/" className="mr-3"><FaInstagram color="white" size={30} /></a>
           <a href="https://linkedin.com/in/shivam-jaiswal-779554232"><FaLinkedin color="white" size={30} /></a>
-          <a href="https://www.codingninjas.com/studio/profile/shivam_2002"><SiCodingninjas color="white" size={30} /></a>
+          <a href="https://www.codingninjas.com/studio/profile/shivam_2002" className='ml-3 mt-1'><SiCodingninjas color="white" size={25} /></a>
         </div>
       </div>
     </div>
