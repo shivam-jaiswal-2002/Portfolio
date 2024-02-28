@@ -19,10 +19,10 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <div className=" flex items-baseline space-x-4">
-              <Link href="/#skills" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Skills</Link>
-              <Link href="/#projects" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Projects</Link>
-              <Link href="/#certifications" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Certificates</Link>
-              <Link href="/#codingprofile" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Coding Profile</Link>
+              <Link href="/#skills" className="text-yellow-200 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Skills</Link>
+              <Link href="/#projects" className="text-yellow-200 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Projects</Link>
+              <Link href="/#certifications" className="text-yellow-200 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Certificates</Link>
+              <Link href="/#codingprofile" className="text-yellow-200 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium">Coding Profile</Link>
             </div>
           </div>
         </div>
