@@ -4,12 +4,11 @@
 
 @import url('https://fonts.google.com/specimen/Anta');
 
-/* #myself {
-  background-image: url('');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-} */
+#myself {
+  background-image: url('../../public/bgvid.gif');
+  background-size:contain;
+  background-attachment: fixed;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -35,6 +34,7 @@ hr {
 
 body {
   color: rgb(var(--foreground-rgb));
+
   background: linear-gradient(
       to bottom,
       transparent,
@@ -116,4 +116,14 @@ body {
 
 .animate-from-right {
   animation-name: animate-from-right;
+}
+
+.container {
+  position: relative;
+}
+
+.floating {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
 }
