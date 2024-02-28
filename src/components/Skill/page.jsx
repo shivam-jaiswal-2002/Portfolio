@@ -33,10 +33,10 @@ const Skills = () => {
   }, []);
 
   return (
-    <div id="skills" className="pt-10 sm:ml-0 lg:max-w-5xl lg:mx-auto lg:px-4 sm:px-10 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
+    <div id="skills" className="pt-10 lg:max-w-5xl lg:mx-auto lg:px-4 sm:px-2 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
       {/* Left Div */}
-      <div className="lg:flex lg:justify-center lg:items-center lg:w-1/2">
-        <div className="lg:relative circle">
+      <div className="lg:flex justify-center items-center lg:w-1/2">
+        <div className="relative sm:ml-0 circle">
           {skills.map((skill, index) => (
             <Skill key={index} icon={skill.icon} name={skill.name} angle={angle + index * (360 / skills.length)} />
           ))}
