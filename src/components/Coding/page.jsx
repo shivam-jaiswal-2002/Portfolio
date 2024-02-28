@@ -23,7 +23,7 @@ const CodingProfile = () => {
                     <SiCodingninjas size={100}/>
                     <div className="hover:text-black">
                     <p className=" mt-3">Coding Ninjas</p>
-                    <p className="">Rating: 20,467</p>
+                    <p className="">EXP: 20,467</p>
                     </div>
                  
                   </div>
