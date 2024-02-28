@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="mr-4">
           <FaPhoneAlt color="black"/>
         </div>
-        <p className="text-lg font-bold text-black">7380534745</p>
+        <p className="text-lg font-bold text-black">(+91) 7380534745</p>
       </div>
       <div className=" rounded-lg p-4 flex lg:items-center lg:justify-center">
         <div className="mr-4">
