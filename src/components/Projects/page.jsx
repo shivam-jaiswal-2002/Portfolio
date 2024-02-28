@@ -61,7 +61,7 @@ const Projects = () => {
               <div>
                 {/* Project 2 */}
                 <div className="flex items-center">
-                  <Image src={sensor} className="rounded-3xl" />
+                  <Image src={sensor} height={300} className="rounded-3xl ml-10" />
                 </div>
               </div>
             </Fade>
