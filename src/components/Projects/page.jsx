@@ -19,9 +19,11 @@ const Projects = () => {
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
               <div>
+                <a href="https://github.com/shivam-jaiswal-2002/emotion_detection_music_system" target="_blank">
                 <div className="flex items-center">
                   <Image src={music} className="rounded-3xl" />
                 </div>
+                </a>
               </div>
             </Fade>
           )}
@@ -54,12 +56,13 @@ const Projects = () => {
           )}
         </VisibilitySensor>
 
-        {/* Project 1 */}
+        {/* Project 2 */}
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
               <div>
                 {/* Project 2 */}
+                <a href=""></a>
                 <div className="flex items-center">
                   <Image src={sensor} height={300} className="rounded-3xl lg:ml-10" />
                 </div>
@@ -95,10 +98,14 @@ const Projects = () => {
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
               <div>
-                {/* Project 2 */}
+                {/* Project 3 */}
+                <a href="https://github.com/shivam-jaiswal-2002/Wine-quality-prediction" target="_blank">
                 <div className="flex items-center">
+
                   <Image src={wine} className="rounded-3xl" />
                 </div>
+                </a>
+
               </div>
             </Fade>
           )}
@@ -108,7 +115,7 @@ const Projects = () => {
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
               <div>
-                {/* Project 2 */}
+                {/* Project 3 */}
                 <div className="border border-gray-300 m-auto p-5">
                   <h2 className="text-xl font-semibold">
                     Wine Quality Prediction
@@ -131,10 +138,13 @@ const Projects = () => {
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
               <div>
-                {/* Project 2 */}
+                {/* Project 4 */}
+                <a href="https://github.com/shivam-jaiswal-2002/Generative-AI-based-post-recommendation-system" target="_blank">
                 <div className="flex items-center">
                   <Image src={gpt} className="rounded-3xl" />
                 </div>
+                </a>
+   
               </div>
             </Fade>
           )}
@@ -143,7 +153,6 @@ const Projects = () => {
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
               <div>
-                {/* Project 2 */}
                 {/* Project 4 */}
                 <div className="flex items-center"></div>
                 <div className="border border-gray-300 p-5 m-auto">

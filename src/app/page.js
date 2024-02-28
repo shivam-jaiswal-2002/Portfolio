@@ -22,8 +22,8 @@ export default function Home() {
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div className="lg:flex">
-                <div className="lg:w-1/2">
+              <div className="lg:flex md:mx-auto">
+                <div className="lg:w-1/2 md:mx-auto">
                   <MeL />
                 </div>
                 <div className="lg:w-1/2 lg:my-auto sm:justify-center sm:item-center">

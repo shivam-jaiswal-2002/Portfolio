@@ -8,20 +8,20 @@ import SQL from "../../../public/SQL.png";
 
 export default function Certifications() {
   const certifications = [
-    { name: "Microsoft SC-900 ", image: MS },
-    { name: "Java Tutorial IIT Bombay", image: JAVAC},
-    { name: "CPP Tutorial IIT Bombay", image: CPP },
-    { name: "Php and Mysql Tutorial IIT Bombay", image: SQL},
-    { name: "Java HackerRank", image: Java },
-    { name: "Problem Solving HackerRank", image: PS},
+    { name: "Microsoft SC-900 ", image: MS , link: "https://drive.google.com/file/d/1GlzmAVAJUCca7pSyxsR4r8ViQ4mAXNtD/view?usp=sharing"},
+    { name: "Java Tutorial IIT Bombay", image: JAVAC ,link: "https://drive.google.com/file/d/1mDutI1U5RrTE8hDydhbQ-3rKaHZXmAZI/view?usp=sharing"},
+    { name: "CPP Tutorial IIT Bombay", image: CPP, link: "https://drive.google.com/file/d/1qYqm1qksA022485a9SqO24_VYDN8_sTX/view?usp=sharing" },
+    { name: "Php and Mysql Tutorial IIT Bombay", image: SQL, link: "https://drive.google.com/file/d/12bw_WKoIwaoai7glO0ghnAQJnEfch_US/view?usp=sharing"},
+    { name: "Java HackerRank", image: Java , link: "https://drive.google.com/file/d/1ucfzoyy7blD6c4aCO09W64WFX5o9gJKl/view?usp=sharing"},
+    { name: "Problem Solving HackerRank", image: PS, link: "https://drive.google.com/file/d/1RnvsGUptORy3lCEU7lPiQveQM05vjH7L/view?usp=sharing"},
   ];
 
   return (
-    <div id="certifications" className="max-w-20xl mx-auto px-4 sm:px-6 lg:px-2 py-12">
+    <div id="certifications" className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-2 py-12">
       <h2 className="text-5xl font-bold mb-4 text-center">Certificates</h2><hr />
       <div className="grid mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
         {certifications.map((certification, index) => (
-          <CertificateBox key={index} name={certification.name} image={certification.image} />
+          <CertificateBox key={index} name={certification.name} image={certification.image} link={certification.link} />
         ))}
       </div>
     </div>

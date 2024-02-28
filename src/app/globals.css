@@ -62,14 +62,15 @@ body {
   position: relative;
 }
 
-.skill {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  transform: translate(-50%, -50%) rotate(calc(var(--angle) * 1deg));
-}
+  .skill {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    transform: translate(-50%, -50%) rotate(calc(var(--angle) * 1deg));
+  }
+
 
 .skill .icon {
   position: absolute;

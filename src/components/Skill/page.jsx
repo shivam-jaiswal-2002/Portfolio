@@ -33,7 +33,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div id="skills" className="pt-10 lg:max-w-5xl lg:mx-auto lg:px-4 sm:px-0 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
+    <div id="skills" className="sm:ml-[-3] pt-10 lg:max-w-5xl lg:mx-auto lg:px-4 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
       {/* Left Div */}
       <div className="lg:flex lg:justify-center lg:items-center lg:w-1/2">
         <div className="relative circle">
