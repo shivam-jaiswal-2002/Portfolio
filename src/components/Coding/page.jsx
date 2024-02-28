@@ -1,5 +1,7 @@
 import { SiCodingninjas, SiHackerrank } from "react-icons/si";
 import { FaStar } from "react-icons/fa";
+import VisibilitySensor from "react-visibility-sensor";
+import { Fade } from "react-awesome-reveal";
 
 const CodingProfile = () => {
   return (
@@ -7,7 +9,11 @@ const CodingProfile = () => {
       <h2 className="text-4xl font-semibold mb-4 items-center text-center">Coding Profile</h2>
       <div className="flex flex-wrap justify-around">
         {/* Coding Ninjas */}
-        <a href="https://www.codingninjas.com/studio/profile/shivam_2002" target="_blank">
+        <VisibilitySensor partialVisibility>
+            {({ isVisible }) => (
+              <Fade bottom when={isVisible}>
+                <div className="lg:flex mt-30 lg:my-20 lg:justify-evenly">
+                <a href="https://www.codingninjas.com/studio/profile/shivam_2002" target="_blank">
         <div className="border border-gray-300 p-8 w-50 rounded-lg flex flex-col items-center mb-4 mr-4">
           <SiCodingninjas size={100} />
           <p className="text-gray-600 mt-3">Coding Ninjas</p>
@@ -15,8 +21,16 @@ const CodingProfile = () => {
         </div>
 
         </a>
+                </div>
+              </Fade>
+            )}
+      </VisibilitySensor>
 
-        <a href="https://www.hackerrank.com/profile/shiv2002am" target="_blank">
+      <VisibilitySensor partialVisibility>
+            {({ isVisible }) => (
+              <Fade bottom when={isVisible}>
+                <div className="lg:flex mt-30 lg:my-20 lg:justify-evenly">
+                <a href="https://www.hackerrank.com/profile/shiv2002am" target="_blank">
            {/* HackerRank - Java */}
         <div className="border border-gray-300 p-6 rounded-lg flex flex-col items-center mb-4 mr-4">
           <SiHackerrank size={100} />
@@ -28,6 +42,11 @@ const CodingProfile = () => {
           </div>
         </div>
         </a>
+                </div>
+              </Fade>
+            )}
+      </VisibilitySensor>
+
        
       </div>
       

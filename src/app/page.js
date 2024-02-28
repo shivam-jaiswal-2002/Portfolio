@@ -18,41 +18,38 @@ export default function Home() {
       className="font-serif bg flex min-h-screen flex-col mb-0 m-7 lg:justify-between sm:justify-center lg:p-24 "
     >
       {/* Myself Page */}
-    <div>
-    <VisibilitySensor partialVisibility>
-        {({ isVisible }) => (
-          <Fade bottom when={isVisible}>
-            <div className="lg:flex">
-              <div className="lg:w-1/2">
-                <MeL />
+      <div className="mb-20">
+        <VisibilitySensor partialVisibility>
+          {({ isVisible }) => (
+            <Fade bottom when={isVisible}>
+              <div className="lg:flex">
+                <div className="lg:w-1/2">
+                  <MeL />
+                </div>
+                <div className="lg:w-1/2 lg:my-auto sm:justify-center sm:item-center">
+                  <MeR />
+                </div>
               </div>
-              <div className="lg:w-1/2 lg:my-auto sm:justify-center sm:item-center">
-                <MeR />
-              </div>
-            </div>
-          </Fade>
-        )}
-      </VisibilitySensor>
-    </div>
+            </Fade>
+          )}
+        </VisibilitySensor>
+      </div>
 
-
-      {/* Skills and SkillName Pages */}
-      <div id="skills" className="lg:flex lg:mt-40 lg:pt-40 sm:ml-10 sm:p-20">
-        <div className="lg:w-1/2 lg:m-auto sm:w-1 sm:ml-2 ">
+      <div className="mt-20 mb-20 lg:mx-auto">
+        <div className="lg:flex">
           <VisibilitySensor partialVisibility>
             {({ isVisible }) => (
               <Fade bottom when={isVisible}>
-                <Skill />
+                <div className="lg:w-1/2">
+                  <Skill />
+                </div>
               </Fade>
             )}
           </VisibilitySensor>
-        </div>
-
-        <div className="lg:w-1/2">
           <VisibilitySensor partialVisibility>
             {({ isVisible }) => (
               <Fade bottom when={isVisible}>
-                <div className="lg:flex lg:my-20 lg:justify-evenly">
+                <div className="lg:w-1/2 lg:ml-40 lg:mt-40">
                   <SkillName />
                 </div>
               </Fade>
@@ -62,15 +59,15 @@ export default function Home() {
       </div>
 
       <div>
-      <VisibilitySensor partialVisibility>
-            {({ isVisible }) => (
-              <Fade bottom when={isVisible}>
-                <div className="lg:flex mt-30 lg:my-20 lg:justify-evenly">
-                  <CodingProfile/>
-                </div>
-              </Fade>
-            )}
-          </VisibilitySensor>
+        <VisibilitySensor partialVisibility>
+          {({ isVisible }) => (
+            <Fade bottom when={isVisible}>
+              <div className="lg:flex mt-30 lg:my-20 lg:justify-evenly">
+                <CodingProfile />
+              </div>
+            </Fade>
+          )}
+        </VisibilitySensor>
       </div>
 
       <div className="mt-40 m-auto pt-40 flex flex-col">
@@ -78,12 +75,10 @@ export default function Home() {
         <hr />
         <Projects />
       </div>
-      
+
       <div>
         <Certifications />
       </div>
-
-
     </main>
   );
 }

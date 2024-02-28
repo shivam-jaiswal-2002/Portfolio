@@ -33,9 +33,9 @@ const Skills = () => {
   }, []);
 
   return (
-    <div id="skills" className="pt-10 lg:max-w-5xl lg:mx-auto lg:px-4 sm:px-2 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
+    <div id="skills" className="pt-10 lg:max-w-5xl lg:mx-auto lg:px-4 sm:px-0 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
       {/* Left Div */}
-      <div className="lg:flex justify-center items-center lg:w-1/2">
+      <div className="lg:flex lg:justify-center lg:items-center lg:w-1/2">
         <div className="relative circle">
           {skills.map((skill, index) => (
             <Skill key={index} icon={skill.icon} name={skill.name} angle={angle + index * (360 / skills.length)} />
@@ -49,7 +49,7 @@ const Skills = () => {
 
 const Skill = ({ icon, name, angle }) => {
   const defaultRadius = 220; // Default radius for larger devices
-  const smallScreenRadius = 150; // Adjust the radius for smaller devices as needed
+  const smallScreenRadius = 152; // Adjust the radius for smaller devices as needed
 
   // Media query to check for smaller devices
   const isSmallScreen = useMediaQuery('(max-width: 768px)'); // Adjust the breakpoint as needed
