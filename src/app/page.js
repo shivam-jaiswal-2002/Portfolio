@@ -10,6 +10,7 @@ import VisibilitySensor from "react-visibility-sensor";
 import Projects from "@/components/Projects/page";
 import Certifications from "@/components/Certifications/page";
 import Contact from "@/components/Contact/page";
+import CodingProfile from "@/components/Coding/page";
 export default function Home() {
   return (
     <main
@@ -58,6 +59,18 @@ export default function Home() {
             )}
           </VisibilitySensor>
         </div>
+      </div>
+
+      <div>
+      <VisibilitySensor partialVisibility>
+            {({ isVisible }) => (
+              <Fade bottom when={isVisible}>
+                <div className="lg:flex mt-30 lg:my-20 lg:justify-evenly">
+                  <CodingProfile/>
+                </div>
+              </Fade>
+            )}
+          </VisibilitySensor>
       </div>
 
       <div className="mt-40 m-auto pt-40 flex flex-col">
