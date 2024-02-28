@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import Image from 'next/image';
-import SJ from "../../../public/SJ1.png";
+import SJ from "../../../public/SJ3.png";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <Link href="/">
-                <div className="flex items-center mt-10 ml-20">
+                <div className="flex items-center ml-20">
                   <Image src={SJ} alt="Logo" width={150} height={150} className="logo" id='sj' />
                 </div>
               </Link>

@@ -5,8 +5,8 @@
 @import url('https://fonts.google.com/specimen/Anta');
 
 #myself {
-  background-image: url('../../public/bgvid.gif');
-  background-size:contain;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../public/bgvid.gif');
+  background-size: contain;
   background-attachment: fixed;
 }
 
