@@ -31,8 +31,8 @@ const Projects = () => {
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div>
-                <div className="flex items-center my-auto">
+              <div className="hover:bg-yellow-300 cursor-pointer hover:text-black">
+                <div className=" flex items-center my-auto">
                   <div className="border border-gray-300 p-5 m-auto">
                     <h2 className="text-xl font-semibold">
                       Emotion Detection Music System
@@ -74,7 +74,7 @@ const Projects = () => {
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div className="my-auto">
+              <div className="my-auto hover:bg-yellow-300 cursor-pointer hover:text-black">
                 {/* Project 2 */}
                 <div className="border border-gray-300 p-5 justify-center items-center m-auto">
                   <h2 className="text-xl font-semibold">
@@ -114,7 +114,7 @@ const Projects = () => {
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div>
+              <div className="hover:bg-yellow-300 cursor-pointer hover:text-black">
                 {/* Project 3 */}
                 <div className="border border-gray-300 m-auto p-5">
                   <h2 className="text-xl font-semibold">
@@ -152,7 +152,7 @@ const Projects = () => {
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div>
+              <div className="hover:bg-yellow-300 cursor-pointer hover:text-black">
                 {/* Project 4 */}
                 <div className="flex items-center"></div>
                 <div className="border border-gray-300 p-5 m-auto">
