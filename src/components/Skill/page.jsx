@@ -49,7 +49,7 @@ const Skills = () => {
 
 const Skill = ({ icon, name, angle }) => {
   const defaultRadius = 220; // Default radius for larger devices
-  const smallScreenRadius = 130; // Adjust the radius for smaller devices as needed
+  const smallScreenRadius = 145; // Adjust the radius for smaller devices as needed
 
   // Media query to check for smaller devices
   const isSmallScreen = useMediaQuery('(max-width: 768px)'); // Adjust the breakpoint as needed
