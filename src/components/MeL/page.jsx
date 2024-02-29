@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Picture from "../../../public/dp2.jpg";
+import Picture from "../../../public/dp4.png";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -45,10 +45,10 @@ const MeL = () => {
 
       <div className="lg:flex lg:justify-center lg:items-center lg:w-1/2 sm:flex lg:p-1 flex flex-col">
         <div className="flex mb-4 mx-auto">
-          <a href="https://github.com/shivam-jaiswal-2002" className="mr-3"><FaGithub color="white" size={30} /></a>
-          <a href="https://www.instagram.com/jais_shivam_/" className="mr-3"><FaInstagram color="white" size={30} /></a>
-          <a href="https://linkedin.com/in/shivam-jaiswal-779554232"><FaLinkedin color="white" size={30} /></a>
-          <a href="https://www.codingninjas.com/studio/profile/shivam_2002" className='ml-3 mt-1'><SiCodingninjas color="white" size={25} /></a>
+          <a href="https://github.com/shivam-jaiswal-2002" target='_blank' className="mr-3"><FaGithub color="white" size={30} /></a>
+          <a href="https://www.instagram.com/jais_shivam_/" target='_blank' className="mr-3"><FaInstagram color="white" size={30} /></a>
+          <a href="https://linkedin.com/in/shivam-jaiswal-779554232" target='_blank'><FaLinkedin color="white" size={30} /></a>
+          <a href="https://www.codingninjas.com/studio/profile/shivam_2002" target='_blank' className='ml-3 mt-1'><SiCodingninjas color="white" size={25} /></a>
         </div>
       </div>
     </div>
