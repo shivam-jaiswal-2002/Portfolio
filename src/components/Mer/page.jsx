@@ -38,7 +38,7 @@ const MeR = () => {
           {/* About Me content */}
           <div className='font-serif text-6xl ml-10'>Shivam Jaiswal</div>
           <div>
-            <h2 className="text-3xl items-center text-center mt-10 font-bold">{displayText}</h2>
+            <h2 className="text-3xl items-center text-center mt-10 font-bold h-24">{displayText}</h2>
             {/* Add more about me content here */}
           </div>
         </div>
