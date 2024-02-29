@@ -16,8 +16,8 @@ const Skills = () => {
     { icon: <FaPython size={50} />,name:"Python" },
     { icon: <FaHtml5 size={50}  />, name:"Html" },
     { icon: <SiCss3 size={50} />, name:"Css" },
-    { icon: <FaReact size={50}  /> , name:"Reactjs"},
-    { icon: <TbBrandNextjs size={50} /> , name:"NextJs"},
+    { icon: <FaReact size={50}  /> , name:"React.js"},
+    { icon: <TbBrandNextjs size={50} /> , name:"Next.js"},
     { icon: <SiExpress size={50} /> ,name:"Express"},
     { icon: <SiSpringboot size={50}  />, name:"Spring" },
   ];
