@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Picture from "../../../public/dp_final.jpeg";
+
 
 const MeR = () => {
   const [displayText, setDisplayText] = useState("Hello, I am a ");
