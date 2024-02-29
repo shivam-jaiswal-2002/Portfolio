@@ -63,7 +63,7 @@ const Skill = ({ icon, name, angle }) => {
 
   return (
     <div
-      className="skill"
+      className="skill lg:mt-20"
       style={{
         position: "flex flex-col",
         top: `calc(50% - ${positionY}px)`,

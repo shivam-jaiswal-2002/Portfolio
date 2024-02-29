@@ -13,7 +13,9 @@ const Projects = () => {
       id="projects"
       className="max-w-5xl font-serif mx-auto px-4 sm:px-6 lg:px-2 py-12"
     >
-      <div className="grid lg:grid-cols-2 gap-8">
+      <div className="text-5xl text-center">Projects</div>
+        <hr />
+      <div className="grid lg:grid-cols-2 gap-8 mt-2">
         {/* Project 1 */}
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (

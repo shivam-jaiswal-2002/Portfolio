@@ -71,8 +71,7 @@ export default function Home() {
       </div>
 
       <div className="mt-40 m-auto pt-40 flex flex-col">
-        <div className="text-5xl text-center mb-2">Projects</div>
-        <hr />
+        
         <Projects />
       </div>
 
