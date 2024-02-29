@@ -14,7 +14,7 @@ const CodingProfile = () => {
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div className=" lg:flex mt-20 lg:my-20 h-5 lg:justify-evenly">
+              <div className="lg:flex mt-20 lg:my-20 lg:justify-evenly">
                 <a
                   href="https://www.codingninjas.com/studio/profile/shivam_2002"
                   target="_blank"
@@ -24,8 +24,7 @@ const CodingProfile = () => {
                     <div className="hover:text-black">
                     <p className=" mt-3">Coding Ninjas</p>
                     <p className="">EXP: 20,467</p>
-                    </div>
-                 
+                    </div>                
                   </div>
                 </a>
               </div>
@@ -36,7 +35,7 @@ const CodingProfile = () => {
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div className=" lg:flex mt-30 lg:my-20 lg:justify-evenly">
+              <div className="lg:flex mt-30 lg:my-20 lg:justify-evenly">
                 <a
                   href="https://www.hackerrank.com/profile/shiv2002am"
                   target="_blank"
