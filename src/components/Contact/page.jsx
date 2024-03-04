@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="mr-4">
           <FaLocationDot color="black"/>
         </div>
-        <p className="text-lg font-bold text-black">C27/111 B6 Jagatganj, Varanasi, UP, India</p>
+        <p className="text-lg font-bold text-black"><a href="geo:0,0?q=C27/111+B6+Jagatganj%2C+Varanasi%2C+India">C27/111 B6 Jagatganj, Varanasi, UP, India</a></p>
       </div>
     </div>
   );
