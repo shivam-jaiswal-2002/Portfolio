@@ -49,7 +49,7 @@ export default function Home() {
           <VisibilitySensor partialVisibility>
             {({ isVisible }) => (
               <Fade bottom when={isVisible}>
-                <div className="lg:w-1/2 lg:ml-40 lg:mt-40">
+                <div className="lg:w-1/2 lg:ml-40 lg:mt-40 lg:pt-5">
                   <SkillName />
                 </div>
               </Fade>

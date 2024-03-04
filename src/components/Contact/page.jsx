@@ -10,13 +10,13 @@ const Contact = () => {
         <div className="mr-4">
           <FaPhoneAlt color="black"/>
         </div>
-        <p className="text-lg font-bold text-black">(+91) 7380534745</p>
+        <p className="text-lg font-bold text-black"><a href="tel:7380534745">(+91) 7380534745</a></p>
       </div>
       <div className=" rounded-lg p-4 flex lg:items-center lg:justify-center">
         <div className="mr-4">
           <IoIosMail color="black"/>
         </div>
-        <p className="text-lg font-bold text-black">shiv2002am@gmail.com</p>
+        <p className="text-lg font-bold text-black"> <a href="mailto:shiv2002am@gmail.com">shiv2002am@gmail.com</a></p>
       </div>
       <div className=" rounded-lg p-4 flex lg:items-center lg:justify-center">
         <div className="mr-4">
