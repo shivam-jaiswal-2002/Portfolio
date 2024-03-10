@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main
       id=""
-      className="font-serif bg flex min-h-screen flex-col mb-0 p-4 lg:justify-between sm:justify-center lg:p-24 "
+      className="font-serif bg flex min-h-screen flex-col mb-0 p-4 ml-4 lg:justify-between sm:justify-center lg:p-24 "
     >
       {/* Myself Page */}
       <div className="mb-40">
