@@ -8,9 +8,9 @@ const About = () => {
       <VisibilitySensor partialVisibility>
         {({ isVisible }) => (
           <Fade bottom when={isVisible}>
-            <div className="flex">
-              <div className="w-1/2 font-serif text-6xl mt-10">About Me</div>
-              <div className="w-1/2 font-serif text-2xl">
+            <div className="lg:flex">
+              <div className="lg:w-1/2 font-serif text-6xl mt-10 mb-5">About Me</div>
+              <div className="lg:w-1/2 font-serif text-2xl sm:justify-evenly">
                 Hey there!, I'm Shivam Jaiswal a passionate computer science
                 enthusiast and an aspiring engineer on a journey through the
                 exciting world of bits, bytes, and algorithms. Currently
