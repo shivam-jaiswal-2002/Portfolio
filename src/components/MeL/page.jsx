@@ -49,8 +49,16 @@ const MeL = () => {
           <a href="https://www.instagram.com/jais_shivam_/" target='_blank' className="mr-3"><FaInstagram color="white" size={30} /></a>
           <a href="https://linkedin.com/in/shivam-jaiswal-779554232" target='_blank'><FaLinkedin color="white" size={30} /></a>
           <a href="https://www.codingninjas.com/studio/profile/shivam_2002" target='_blank' className='ml-3 mt-1'><SiCodingninjas color="white" size={25} /></a>
+
         </div>
+        <a href="https://drive.google.com/file/d/1sHWJ0guJCNTBxckJOxrLUUc1U5XYqhQc/view?usp=sharing" target='_blank'>
+          <div className='border border-gray-400 inline-block p-2 text-xl bg-white hover:bg-black text-black hover:text-white font-serif'>
+          Resume
+          </div>
+         </a>
       </div>
+      
+
     </div>
   );
 };

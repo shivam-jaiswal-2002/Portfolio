@@ -11,6 +11,7 @@ import Projects from "@/components/Projects/page";
 import Certifications from "@/components/Certifications/page";
 import Contact from "@/components/Contact/page";
 import CodingProfile from "@/components/Coding/page";
+import About from "@/components/About/page";
 export default function Home() {
   return (
     <main
@@ -18,7 +19,7 @@ export default function Home() {
       className="font-serif bg flex min-h-screen flex-col mb-0 m-7 lg:justify-between sm:justify-center lg:p-24 "
     >
       {/* Myself Page */}
-      <div className="mb-20">
+      <div className="mb-40">
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
@@ -34,7 +35,11 @@ export default function Home() {
           )}
         </VisibilitySensor>
       </div>
-
+          
+      <div className="">
+          <About/>
+      </div>
+        
       <div className="mt-20 mb-20 lg:mx-auto">
         <div className="lg:flex">
           <VisibilitySensor partialVisibility>
