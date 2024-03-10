@@ -36,7 +36,7 @@ const MeR = () => {
         {/* Right Div */}
         <div className="lg:flex flex-col justify-center items-center">
           {/* About Me content */}
-          <div className='font-serif text-6xl ml-10'>Shivam Jaiswal</div>
+          <div className='font-serif text-6xl ml-10 pl-3'>Shivam Jaiswal</div>
           <div>
             <h2 className="text-3xl items-center text-center mt-10 font-bold h-24">{displayText}</h2>
             {/* Add more about me content here */}

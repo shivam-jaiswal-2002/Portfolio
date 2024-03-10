@@ -55,7 +55,7 @@ const MeL = () => {
    
       </div>
       
-      <div className='ml-20 pl-3'>
+      <div className='ml-20 pl-4'>
       <a href="https://drive.google.com/file/d/1sHWJ0guJCNTBxckJOxrLUUc1U5XYqhQc/view?usp=sharing" target='_blank'>
           <div className='mx-auto border border-gray-400 inline-block p-2 text-xl bg-white hover:bg-black text-black hover:text-white font-serif '>
             Resume
