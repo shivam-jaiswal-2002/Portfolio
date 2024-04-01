@@ -6,20 +6,20 @@ import { Fade } from "react-awesome-reveal";
 const CodingProfile = () => {
   return (
     <div id="codingprofile" className="mb-8 mt-20 pt-20">
-      <h2 className="hover:text-black text-4xl font-semibold mb-4 items-center text-center">
+      <h2 className="text-4xl font-semibold mb-4 items-center text-center">
         Coding Profile
       </h2>
-      <div className="flex flex-wrap justify-around ">
+      <div className="flex flex-wrap justify-around shadow-blue-600">
         {/* Coding Ninjas */}
         <VisibilitySensor partialVisibility>
           {({ isVisible }) => (
             <Fade bottom when={isVisible}>
-              <div className="lg:flex mt-20 lg:my-20 lg:justify-evenly">
+              <div className="lg:flex mt-20 lg:my-20 lg:justify-evenly shadow-blue-600">
                 <a
                   href="https://www.codingninjas.com/studio/profile/shivam_2002"
                   target="_blank"
                 >
-                  <div className="hover:bg-yellow-300 border border-gray-300 px-10 py-6 w-70 hover:text-black rounded-lg flex flex-col items-center mb-4 mr-4">
+                  <div className="hover:bg-yellow-300 border hover:shadow-blue-600 border-gray-300 px-10 py-6 w-70 hover:text-black rounded-lg flex flex-col items-center mb-4 mr-4">
                     <SiCodingninjas size={100}/>
                     <div className="hover:text-black">
                     <p className=" mt-3">Coding Ninjas</p>
