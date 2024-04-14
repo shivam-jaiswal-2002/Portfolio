@@ -8,6 +8,7 @@ import { FaPython } from "react-icons/fa";
 import { SiCss3, SiExpress, SiSpringboot } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import useMediaQuery from '@mui/material/useMediaQuery'
+import {Slide} from "react-awesome-reveal";
 
 const Skills = () => {
   const skills = [
@@ -36,11 +37,13 @@ const Skills = () => {
     <div id="skills" className="pt-10 lg:max-w-5xl lg:mx-auto lg:px-4 sm:pt-20 sm:mt-20 lg:py-12 lg:justify-between">
       {/* Left Div */}
       <div className="lg:flex lg:justify-center lg:items-center lg:w-1/2">
+      <Slide direction="left" triggerOnce duration={1000} fraction={0.4}>
         <div className="relative circle">
           {skills.map((skill, index) => (
             <Skill key={index} icon={skill.icon} name={skill.name} angle={angle + index * (360 / skills.length)} />
           ))}
         </div>
+      </Slide>
       </div>
     </div>
   );

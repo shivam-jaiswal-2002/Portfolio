@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { SiCodingninjas } from "react-icons/si";
+import { Slide } from 'react-awesome-reveal';
 const MeL = () => {
   const [displayText, setDisplayText] = useState("Hello, I am a ");
   const [isDeveloper, setIsDeveloper] = useState(false);
@@ -36,6 +37,7 @@ const MeL = () => {
   return (
     <div className="lg:flex lg:flex-col lg:max-w-5xl lg:mx-auto px-4 sm:px-6 lg:px-2 py-12 lg:justify-between">
       {/* Left Div */}
+      <Slide direction="left" triggerOnce duration={1000} fraction={0.4}>
       <div className="lg:w-1/2 sm:w-full">
         {/* Displaying the image */}
         <div className="lg:relative lg:rounded-full lg:overflow-hidden mb-10"> {/* Set a fixed size for the container */}
@@ -62,6 +64,7 @@ const MeL = () => {
           </div>
       </a>
       </div>
+      </Slide>
     </div>
   );
 };

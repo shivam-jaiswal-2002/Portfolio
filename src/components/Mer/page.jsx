@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import { Slide } from 'react-awesome-reveal';
 
 
 const MeR = () => {
@@ -16,7 +17,7 @@ const MeR = () => {
 
   useEffect(() => {
     const text = isDeveloper ? "Next.js Developer" : "Student";
-    const fullText = "Hello, I am a " + text;
+    const fullText = "Hey there, I am a " + text;
     let currentIndex = 14;
  
     const typingAnimation = setInterval(() => {
@@ -34,6 +35,7 @@ const MeR = () => {
     <div className="">
 
         {/* Right Div */}
+        <Slide direction="right" triggerOnce duration={1000} fraction={0.4}>
         <div className="lg:flex flex-col justify-center items-center">
           {/* About Me content */}
           <div className='font-serif text-6xl ml-10 pl-3'>Shivam Jaiswal</div>
@@ -42,6 +44,7 @@ const MeR = () => {
             {/* Add more about me content here */}
           </div>
         </div>
+        </Slide>
     </div>
   );
 };
