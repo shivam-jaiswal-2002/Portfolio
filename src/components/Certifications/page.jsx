@@ -33,23 +33,23 @@ const Certifications = () => {
   );
 };
 
-// Function to determine slide direction based on index
+
 const getDirection = (index) => {
   switch (index) {
-    case 0: // First certificate, slide in from left
+    case 0: 
       return 'left';
-    case 1: // Second certificate, slide in from top
+    case 1: 
       return 'top';
-    case 2: // Third certificate, slide in from right
+    case 2: 
       return 'right';
-    case 3: // Fourth certificate, slide in from left
+    case 3: 
       return 'left';
-    case 4: // Fifth certificate, slide in from bottom
+    case 4: 
       return 'bottom';
-    case 5: // Sixth certificate, slide in from right
+    case 5: 
       return 'right';
     default:
-      return 'left'; // Default to left if index is out of range
+      return 'left'; 
   }
 };
 

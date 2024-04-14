@@ -10,7 +10,7 @@ const MeR = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsDeveloper((prevIsDeveloper) => !prevIsDeveloper);
-    }, 2000); // Change the duration as needed (milliseconds)
+    }, 2000); 
 
     return () => clearInterval(interval);
   }, []);
@@ -26,7 +26,7 @@ const MeR = () => {
       if (currentIndex > fullText.length) {
         clearInterval(typingAnimation);
       }
-    }, 100); // Change the typing speed as needed (milliseconds)
+    }, 100);
 
     return () => clearInterval(typingAnimation);
   }, [isDeveloper]);
@@ -41,7 +41,6 @@ const MeR = () => {
           <div className='font-serif text-6xl ml-10 pl-3'>Shivam Jaiswal</div>
           <div>
             <h2 className="text-3xl items-center text-center mt-10 font-bold h-24">{displayText}</h2>
-            {/* Add more about me content here */}
           </div>
         </div>
         </Slide>

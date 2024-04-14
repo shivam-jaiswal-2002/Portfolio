@@ -27,8 +27,8 @@ const Skills = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAngle((prevAngle) => prevAngle + 1); // Increase the angle slowly
-    }, 100); // Adjust the interval for smoother or faster rotation
+      setAngle((prevAngle) => prevAngle + 1);
+    }, 100); 
 
     return () => clearInterval(interval);
   }, []);
@@ -51,16 +51,16 @@ const Skills = () => {
 
 
 const Skill = ({ icon, name, angle }) => {
-  const defaultRadius = 220; // Default radius for larger devices
-  const smallScreenRadius = 145; // Adjust the radius for smaller devices as needed
+  const defaultRadius = 220; 
+  const smallScreenRadius = 145;
 
-  // Media query to check for smaller devices
-  const isSmallScreen = useMediaQuery('(max-width: 768px)'); // Adjust the breakpoint as needed
 
-  // Use the appropriate radius based on the screen size
+  const isSmallScreen = useMediaQuery('(max-width: 768px)');
+
+
   const adjustedRadius = isSmallScreen ? smallScreenRadius : defaultRadius;
 
-  // Calculate position based on the adjusted radius
+
   const positionX = adjustedRadius * Math.cos((angle * Math.PI) / 180);
   const positionY = adjustedRadius * Math.sin((angle * Math.PI) / 180);
 

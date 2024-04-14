@@ -13,7 +13,7 @@ const MeL = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIsDeveloper((prevIsDeveloper) => !prevIsDeveloper);
-    }, 3000); // Change the duration as needed (milliseconds)
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, []);
@@ -29,7 +29,7 @@ const MeL = () => {
       if (currentIndex > fullText.length) {
         clearInterval(typingAnimation);
       }
-    }, 100); // Change the typing speed as needed (milliseconds)
+    }, 100); 
 
     return () => clearInterval(typingAnimation);
   }, [isDeveloper]);
@@ -39,8 +39,7 @@ const MeL = () => {
       {/* Left Div */}
       <Slide direction="left" triggerOnce duration={1000} fraction={0.4}>
       <div className="lg:w-1/2 sm:w-full">
-        {/* Displaying the image */}
-        <div className="lg:relative lg:rounded-full lg:overflow-hidden mb-10"> {/* Set a fixed size for the container */}
+        <div className="lg:relative lg:rounded-full lg:overflow-hidden mb-10"> 
           <Image src={Picture} alt="My Profile Picture" width={500} height={500} className="rounded-lg" />
         </div>
       </div>
